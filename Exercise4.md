@@ -30,7 +30,7 @@ CREATE TABLE campaigns (
   PRIMARY KEY (company_id, id) ); 
 ```
 
-  ![](Images/quey1.png)
+  ![](Images/1query.png)
  
 2.In the bash console copy and paste the following CREATE TABLE command to create a table for the company's ads, then press enter. 
 
