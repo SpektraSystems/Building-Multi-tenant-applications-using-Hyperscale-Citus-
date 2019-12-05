@@ -26,7 +26,7 @@ UPDATE campaigns
  WHERE company_id = 5;
 ```
 
-  ![](Images/firewall.png)
+  ![](Images/8query.png)
   
 A common pain point for users scaling applications with NoSQL databases is the lack of transactions and joins. However, transactions work as you’d expect them to in Hyperscale (Citus).
 
@@ -50,7 +50,7 @@ UPDATE campaigns
 COMMIT;
 ```
 
-  ![](Images/firewall.png)
+  ![](Images/9query.png)
   
 As a final demo of SQL support, we have a query which includes aggregates and window functions and it works the same in Hyperscale (Citus) as it does in PostgreSQL. The query ranks the ads in each campaign by the count of their impressions.
 
@@ -72,9 +72,9 @@ ORDER BY a.campaign_id, n_impressions desc;
 Limit 20; 
 ```
 
-  ![](Images/firewall.png)
+  ![](Images/10query.png)
 
-> **Note**: If you are stuck in the results view, type q and press Enter to quit view mode
+> **Note**: If you are stuck in the results view, type q in front of **:** and press Enter to quit view mode.
 In short when queries are scoped to a tenant then inserts, updates, deletes, complex SQL, and transactions all work as expected.
   
 4.Click **Next** at the bottom right of this window.
