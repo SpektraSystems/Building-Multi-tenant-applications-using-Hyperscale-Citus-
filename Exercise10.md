@@ -19,7 +19,7 @@ GROUP BY user_data->>'is_mobile'
 ORDER BY count DESC;
 ```
 
-  ![](Images/firewall.png)
+  ![](Images/16query.png)
   
 2.In the bash console copy and paste the following to optimize this query by creating a partial index.
 
@@ -29,7 +29,7 @@ ON clicks ((user_data->>'is_mobile'))
 WHERE company_id = 5;
 ```
 
-  ![](Images/firewall.png)
+  ![](Images/17query.png)
   
 PostgreSQL supports GIN indices on JSONB columns. Creating a GIN index on a JSONB column will create an index on every key and value within that JSON document. This speeds up a number of JSONB operators such as ?, ?|, and ?&.
 
@@ -49,6 +49,10 @@ SELECT id
  Limit 5; 
 ```
 
-  ![](Images/firewall.png)
+After running the command you will observe a table similar to one shown below:
+
+  ![](Images/18query.png)
+  
+> **Note**: If you are stuck in the results view, type q in front of **:** and press Enter to quit view mode.
   
 4.Click **Next** at the bottom right of this window.
