@@ -17,4 +17,4 @@ ALTER TABLE ads
 
 This updates all the workers as well. Once this command finishes, the Hyperscale (Citus) cluster will accept queries that read or write data in the new caption column.
 
-2.	Click **Next** at the bottom right of this window.
+2.Click **Next** at the bottom right of this window.
