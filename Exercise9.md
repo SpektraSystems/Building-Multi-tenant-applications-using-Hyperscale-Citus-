@@ -13,7 +13,7 @@ ALTER TABLE ads
   ADD COLUMN caption text; 
 ```
 
-  ![](Images/firewall.png)
+  ![](Images/15query.png)
 
 This updates all the workers as well. Once this command finishes, the Hyperscale (Citus) cluster will accept queries that read or write data in the new caption column.
 
