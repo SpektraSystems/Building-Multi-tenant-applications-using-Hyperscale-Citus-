@@ -33,7 +33,7 @@ SELECT create_distributed_table('clicks', 'company_id');
 SELECT create_distributed_table('impressions', 'company_id'); 
 ```
 
-  ![](Images/quey1.png)
+  ![](Images/5query.png)
 
 2.Click **Next** at the bottom right of this window.
 
