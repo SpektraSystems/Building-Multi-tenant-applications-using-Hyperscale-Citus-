@@ -51,7 +51,7 @@ CREATE TABLE ads (
 ); 
 ``` 
 
-  ![](Images/quey1.png)
+  ![](Images/2query.png)
 
 3.In the bash console copy and paste the following CREATE TABLE commands to track statistics about clicks and impressions for each add, then press enter. 
 
@@ -83,7 +83,7 @@ CREATE TABLE impressions (
 ); 
 ``` 
 
-  ![](Images/quey1.png)
+  ![](Images/3query.png)
 
 4.In the bash console copy and paste the following display table commands to see the tables you have just created
 
@@ -91,7 +91,7 @@ CREATE TABLE impressions (
 \dt
 ```
 
-  ![](Images/quey1.png)
+  ![](Images/4query.png)
   
 Multi-tenant applications can enforce uniqueness only per tenant, which is why all primary and foreign keys include the company ID. This requirement makes enforcing these constraints much more efficient in a distributed environment as only a single node has to be checked to guarantee them.
 
