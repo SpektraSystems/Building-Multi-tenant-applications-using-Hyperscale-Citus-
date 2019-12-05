@@ -23,5 +23,7 @@ psql "host=srv131057.postgres.database.azure.com port=5432 dbname=citus user=cit
 
 6. Now you will get connected to **Citus** database server.
 
-  ![](Images/quey1.png)
+   ![](Images/quey1.png)
+
+7. Click **Next** on the bottom right of this page.
   
