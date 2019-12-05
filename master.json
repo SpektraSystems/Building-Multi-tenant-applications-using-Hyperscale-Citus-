@@ -4,44 +4,56 @@
     "Language": "English",
     "Files": [
       {
-        "RawFilePath": "",
+        "RawFilePath": "https://raw.githubusercontent.com/SpektraSystems/Building-Multi-tenant-applications-using-Hyperscale-Citus-/master/README.md",
         "Order": 0
       },
       {
-        "RawFilePath": "",
+        "RawFilePath": "https://raw.githubusercontent.com/SpektraSystems/Building-Multi-tenant-applications-using-Hyperscale-Citus-/master/Getting%20Started.md",
         "Order": 1
       },
       {
-        "RawFilePath": "",
+        "RawFilePath": "https://raw.githubusercontent.com/SpektraSystems/Building-Multi-tenant-applications-using-Hyperscale-Citus-/master/Exercise1.md",
         "Order": 2
       },
       {
-        "RawFilePath": "",
+        "RawFilePath": "https://raw.githubusercontent.com/SpektraSystems/Building-Multi-tenant-applications-using-Hyperscale-Citus-/master/Exercise2.md",
         "Order": 3
       },
       {
-        "RawFilePath": "",
+        "RawFilePath": "https://raw.githubusercontent.com/SpektraSystems/Building-Multi-tenant-applications-using-Hyperscale-Citus-/master/Exercise3.md",
         "Order": 4
       },
       {
-        "RawFilePath": "",
+        "RawFilePath": "https://raw.githubusercontent.com/SpektraSystems/Building-Multi-tenant-applications-using-Hyperscale-Citus-/master/Exercise4.md",
         "Order": 5
       },
       {
-        "RawFilePath": "",
+        "RawFilePath": "https://raw.githubusercontent.com/SpektraSystems/Building-Multi-tenant-applications-using-Hyperscale-Citus-/master/Exercise5.md",
         "Order": 6
       },
       {
-        "RawFilePath": "",
+        "RawFilePath": "https://raw.githubusercontent.com/SpektraSystems/Building-Multi-tenant-applications-using-Hyperscale-Citus-/master/Exercise6.md",
         "Order": 7
       },
       {
-        "RawFilePath": "",
+        "RawFilePath": "https://raw.githubusercontent.com/SpektraSystems/Building-Multi-tenant-applications-using-Hyperscale-Citus-/master/Exercise7.md",
         "Order": 8
       },
       {
-        "RawFilePath": "",
+        "RawFilePath": "https://raw.githubusercontent.com/SpektraSystems/Building-Multi-tenant-applications-using-Hyperscale-Citus-/master/Exercise8.md",
         "Order": 9
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/SpektraSystems/Building-Multi-tenant-applications-using-Hyperscale-Citus-/master/Exercise9.md",
+        "Order": 10
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/SpektraSystems/Building-Multi-tenant-applications-using-Hyperscale-Citus-/master/Exercise10.md",
+        "Order": 11
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/SpektraSystems/Building-Multi-tenant-applications-using-Hyperscale-Citus-/master/Conclusion.md",
+        "Order": 12
       }
     ]
   }
