@@ -5,6 +5,7 @@ In the previous section we identified the correct distribution column for our mu
 The next step is loading sample data into the cluster from the command line.
 
 ## Lab 5:Download and ingest the data from the shell
+
 1.In the bash console copy and paste the following to download the sample data.
 
 ```
@@ -16,7 +17,7 @@ The next step is loading sample data into the cluster from the command line.
 \! curl -O https://examples.citusdata.com/mt_ref_arch/geo_ips.csv 
 ```
 
-  ![](Images/firewall.png)
+  ![](Images/6query.png)
   
 Being an extension of PostgreSQL, Hyperscale (Citus) supports bulk loading with the COPY command. Use it to ingest the data you downloaded, and make sure that you specify the correct file path if you downloaded the file to some other location.
 
@@ -30,6 +31,6 @@ Being an extension of PostgreSQL, Hyperscale (Citus) supports bulk loading with 
 \copy impressions from 'impressions.csv' with csv 
 ```   
 
-  ![](Images/firewall.png)
+  ![](Images/7query.png)
   
 3.Click **Next** at the bottom right of this window.
