@@ -8,7 +8,7 @@ Multi-tenant applications have a nice property that we can take advantage of: qu
 
 Because application queries are restricted to a single tenant, such as a store or company, one approach for making multi-tenant application queries fast is to store all data for a given tenant on the same node. This minimizes network overhead between the nodes and allows Hyperscale (Citus) to support all your application’s joins, key constraints and transactions efficiently. With this, you can scale across multiple nodes without having to totally re-write or re-architect your application.
 
-![](Images/diagram.png)
+  ![](Images/diagram.png)
 
 We do this in Hyperscale (Citus) by making sure every table in our schema that is related to the tenant has a column to clearly mark which tenant owns which rows. In the advertising operational analytics application the tenants are companies, so we must ensure all tables that are related to a company have a company_id column. These tables are called distributed tables. 
 
@@ -22,8 +22,8 @@ At this point feel free to follow along in your own Hyperscale (Citus) cluster b
 
 The create_distributed_table function informs Hyperscale (Citus) that a table should be distributed among nodes and that future incoming queries to those tables should be planned for distributed execution. The function also creates shards for the table on worker nodes, which are low-level units of data storage Hyperscale (Citus) uses to assign data to nodes.
 This specific example will scale the application you created by sharding the tables across the database based on company_id.
-1.	 
-In the Psql console copy and paste the following to create the distribution key (shard)
+
+1.In the Psql console copy and paste the following to create the distribution key (shard)
 
 ```
 SELECT create_distributed_table('companies', 'id'); 
@@ -35,5 +35,5 @@ SELECT create_distributed_table('impressions', 'company_id');
 
   ![](Images/quey1.png)
 
-Click **Next** at the bottom right of this window.
+2.Click **Next** at the bottom right of this window.
 
