@@ -4,6 +4,8 @@ We’ll build a back-end example for a multi-tenant SaaS application that enable
 
 Let’s start by considering a simplified schema for this multi-tenant SaaS application. The application must keep track of multiple companies, each of which runs advertising campaigns. Campaigns have many ads, and each ad has associated records of its clicks and impressions.Here is the example schema.
 
+## Lab 4: 
+
 1.In the bash console copy and paste the following CREATE TABLE commands to create a table for companies (a.k.a. tenant) and their campaigns, then press enter.
 
 ```
