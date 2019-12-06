@@ -7,7 +7,7 @@ However Hyperscale (Citus) provides a much easier way with its unstructured colu
 
 In this example a tenant (say company five), uses the JSONB column to also track whether the user is on a mobile device.
 
-## Lab 9:
+## Lab 9: Running queries when Data Differs Across Tenants
 
 1.In the bash console copy and paste the following to see company 5 users by mobile device.
 
