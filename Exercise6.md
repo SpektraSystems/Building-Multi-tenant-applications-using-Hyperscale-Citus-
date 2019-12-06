@@ -4,7 +4,7 @@ In the previous section we identified the correct distribution column for our mu
 
 The next step is loading sample data into the cluster from the command line.
 
-## Lab 5:Download and ingest the data from the shell
+## Lab 5: Download and ingest the data from the shell
 
 1.In the bash console copy and paste the following to download the sample data.
 
