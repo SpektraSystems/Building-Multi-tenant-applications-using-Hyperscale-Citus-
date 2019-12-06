@@ -1,4 +1,4 @@
-# Online Changes to the Schema
+# Changes to the Schema
 
 Another challenge with multi-tenant systems is keeping the schemas for all the tenants in sync. Any schema change needs to be consistently reflected across all the tenants. In Hyperscale (Citus), you can simply use standard PostgreSQL DDL (Data Definition Language) commands to change the schema of your tables, and Hyperscale (Citus) will propagate them from the coordinator node to the workers using a two-phase commit (2PC) protocol.
 
