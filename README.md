@@ -1,6 +1,4 @@
-# Building-Multi-tenant-applications-using-Hyperscale-Citus
-
-### Multi-tenant Applications
+# Multi-tenant Applications
 
 This experience will take you through the process of creating a multi-tenant application on Hyperscale (Citus) on Azure Database for PostgreSQL.
 
@@ -13,5 +11,5 @@ Hyperscale (Citus) allows users to write multi-tenant applications as if they ar
 
 This guide takes a sample multi-tenant application and describes how to model it for scalability with Hyperscale (Citus). Along the way we examine typical challenges for multi-tenant applications like isolating tenants from noisy neighbors, scaling hardware to accommodate more data, and storing data that differs across tenants. Hyperscale (Citus) on Azure Database for PostgreSQL provides all the tools needed to handle these challenges, so let’s get building.
 
-1. Click Next at the bottom right of this window
+1. Click **Next** at the bottom right of this window.
 
