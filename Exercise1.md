@@ -24,7 +24,7 @@ Then click **Create**.
 
  ![](Images/createstorage.png)
   
- > **Note: This may take up to a minute to create and start the Cloud Shell.**
+ > **Note**: This may take up to a minute to create and start the Cloud Shell.
    
 5.We will need the client IP address of Cloud Shell to configure the firewall in the next step. At the command prompt enter the following command then copy or note the IP address of your cloud shell.
 
@@ -34,6 +34,6 @@ curl -s https://ifconfig.co
 
    ![](Images/curlip.png)
 
-> **Note: To paste in the bash console right click and choose paste.**
+> **Note**: To paste in the bash console right click and choose paste.
 
 6.Click **Next** on the bottom right of this page.
