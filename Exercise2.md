@@ -4,7 +4,7 @@ The Hyperscale (Citus) on Azure Database for PostgreSQL service uses a firewall 
 
 We pre-provisioned a basic production grade Hyperscale (Citus) cluster with 1 coordinator with 4 vCores and 16GB RAM and 2 workers with each 2 vCores and 16GB RAM for this lab.
 
-## Lab 2: Configure a server-level firewall rule
+## **Lab 2: Configure a server-level firewall rule**
 
 1.On the left side navigation of the overview pane under **Security** click **Networking**. Enter the IP address from your Cloud Shell in the **START IP** and **END IP** boxes and for Firewall Rule Name enter **CloudShell**.
 Then click **Save** at the top left of the pane.
