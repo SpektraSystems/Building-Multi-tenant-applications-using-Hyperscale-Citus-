@@ -6,7 +6,7 @@ Basically when the resulting SQL executed in the database contains a WHERE compa
 
 When the application requests data for a single tenant, the database can execute the query on a single worker node. Single-tenant queries filter by a single tenant ID. For example, the following query filters company_id = 5 for ads and impressions.
 
-## Lab 6: Updating a tenant
+## **Lab 6: Updating a tenant**
 
 1.In the bash console copy and paste the following to execute a query and update on a single tenant.
 
