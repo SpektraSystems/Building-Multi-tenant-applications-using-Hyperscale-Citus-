@@ -2,7 +2,7 @@
 
 Any application queries or update statements which include a filter on company_id will continue to work exactly as they are. As mentioned earlier, this kind of filter is common in multi-tenant apps. When using an Object-Relational Mapper (ORM) you can recognize these queries by methods such as where or filter.
 
-Basically when the resulting SQL executed in the database contains a WHERE company_id = value clause on every table (including tables in JOIN queries), then Hyperscale (Citus) will recognize that the query should be routed to a single node and execute it there as it is. This makes sure that all SQL functionality is available. Each node is an ordinary PostgreSQL server after all. Single tenant query for company_id = 5
+When the resulting SQL executed in the database contains a WHERE company_id = value clause on every table (including tables in JOIN queries), then Hyperscale (Citus) will recognize that the query should be routed to a single node and execute it there as it is. This makes sure that all SQL functionality is available. Each node is an ordinary PostgreSQL server after all. Single tenant query for company_id = 5
 
 When the application requests data for a single tenant, the database can execute the query on a single worker node. Single-tenant queries filter by a single tenant ID. For example, the following query filters company_id = 5 for ads and impressions.
 
@@ -52,9 +52,9 @@ COMMIT;
 
   ![](Images/9query.png)
   
-As a final demo of SQL support, we have a query which includes aggregates and window functions and it works the same in Hyperscale (Citus) as it does in PostgreSQL. The query ranks the ads in each campaign by the count of their impressions.
+As a final demo of SQL support, we have a query which includes aggregates and window functions that works the same in Hyperscale(Citus) as it does in PostgreSQL. The query ranks the ads in each campaign by the count of their impressions.
 
-3.In the Psql console copy and paste the following to execute a cross database aggregate query.
+3.In the bash console copy and paste the following to execute a cross database aggregate query.
 
 ```
 SELECT a.campaign_id,       
