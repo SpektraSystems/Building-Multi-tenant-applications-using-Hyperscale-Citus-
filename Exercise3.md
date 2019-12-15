@@ -1,6 +1,6 @@
 # Connecting to Hyperscale (Citus) on Azure Database for PostgreSQL
 
-When you create your Hyperscale (Citus) cluster, a default database named citus is created. To connect to your database server, you need a connection string and the admin password. Initial connections to Postgres may take up to 2 minutes. If for any reason your shell times out and you restart it you will need to perform the curl -s https://ifconfig.co command again and ensure the firewall is updated with the new IP address.
+When you create your Hyperscale(Citus) cluster, a default database named citus is created. To connect to your database server, you need a connection string and the admin password. Initial connections to Postgres may take up to 2 minutes. If for any reason your shell times out and you restart it you will need to perform the curl -s https://ifconfig.co command again and ensure the firewall is updated with the new IP address.
 
 ## **Lab 3: Connect to the database using Psql**
 
@@ -21,7 +21,7 @@ psql "host=srv131057.postgres.database.azure.com port=5432 dbname=citus user=cit
 
 5.When asked for password, enter **Password.1!!** and press **enter**.
 
-6.Now you will get connected to **Citus** database server.
+6.Now you will get connected to **Hyperscale(Citus)** database server.
 
    ![](Images/quey1.png)
 
