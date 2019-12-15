@@ -4,7 +4,7 @@ Another challenge with multi-tenant systems is keeping the schemas for all the t
 
 For example, the advertisements in this application could use a caption text column. We can add a column to the table by issuing the standard SQL on the coordinator.
 
-## Lab 8: Online Changes to the Schema
+## **Lab 8: Online Changes to the Schema**
 
 1.In the bash console copy and paste the following to add a new column.
 
