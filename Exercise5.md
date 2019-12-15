@@ -18,7 +18,7 @@ So in this example company_id will be the “distribution column” (also called
 As an example, in the above diagram all the rows on all tables for company_id 5 are on the same worker node.
 At this point feel free to follow along in your own Hyperscale (Citus) cluster by downloading and executing the SQL to create the schema. Once the schema is ready, we can tell Hyperscale (Citus) to create shards on the workers.
 
-### Shard tables across nodes
+### **Shard tables across nodes**
 
 The create_distributed_table function informs Hyperscale (Citus) that a table should be distributed among nodes and that future incoming queries to those tables should be planned for distributed execution. The function also creates shards for the table on worker nodes, which are low-level units of data storage Hyperscale (Citus) uses to assign data to nodes.
 This specific example will scale the application you created by sharding the tables across the database based on company_id.
