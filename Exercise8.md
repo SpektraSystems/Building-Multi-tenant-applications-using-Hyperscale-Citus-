@@ -2,7 +2,7 @@
 
 Until now all tables have been distributed by company_id, but sometimes there is data that can be shared by all tenants, and doesn’t “belong” to any tenant in particular. For instance, all companies using this example ad platform might want to get geographical information for their audience based on IP addresses. In a single machine database this could be accomplished by a lookup table for geo-ip, like the following. (A real table would probably use PostGIS but bear with the simplified example.)
 
-## Lab 7: Create a table to hold shared geographic information.
+## **Lab 7: Create a table to hold shared geographic information**
 
 1.In the bash console copy and paste the following to create the geo_ips table.
 
