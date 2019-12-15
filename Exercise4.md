@@ -53,7 +53,7 @@ CREATE TABLE ads (
 
   ![](Images/2query.png)
 
-3.In the bash console copy and paste the following CREATE TABLE commands to track statistics about clicks and impressions for each add, then press enter. 
+3.In the bash console copy and paste the following CREATE TABLE commands to track statistics about clicks and impressions for each ad, then press enter. 
 
 ```
 CREATE TABLE clicks ( 
