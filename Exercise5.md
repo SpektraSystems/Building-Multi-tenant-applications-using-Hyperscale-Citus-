@@ -27,9 +27,21 @@ This specific example will scale the application you created by sharding the tab
 
 ```
 SELECT create_distributed_table('companies', 'id'); 
+```
+
+```
 SELECT create_distributed_table('campaigns', 'company_id'); 
+```
+
+```
 SELECT create_distributed_table('ads', 'company_id'); 
+```
+
+```
 SELECT create_distributed_table('clicks', 'company_id'); 
+```
+
+```
 SELECT create_distributed_table('impressions', 'company_id'); 
 ```
 
