@@ -6,7 +6,15 @@ We pre-provisioned a basic production grade Hyperscale (Citus) cluster with 1 co
 
 ## **Lab 2: Configure a server-level firewall rule**
 
-1.On the left side navigation of the overview pane under **Security** click **Networking**. Enter the IP address from your Cloud Shell in the **START IP** and **END IP** boxes and for Firewall Rule Name enter **CloudShell**.
+1.Navigate to **Home** in Azure Portal. Then under Azure services click **Azure Database for PostgreSQL servers**. 
+
+  ![](Images/postgresql.png)
+
+2.Select the pre-cretead database **postgresxxxx**.
+
+  ![](Images/postgresql1.png)
+
+3.On the left side navigation of the overview pane under **Security** click **Networking**. Enter the IP address from your Cloud Shell in the **START IP** and **END IP** boxes and for Firewall Rule Name enter **CloudShell**.
 Then click **Save** at the top left of the pane.
 
   ![](Images/firewall.png)
