@@ -12,7 +12,7 @@ Because application queries are restricted to a single tenant, such as a store o
 
 We do this in Hyperscale (Citus) by making sure every table in our schema that is related to the tenant has a column to clearly mark which tenant owns which rows. In the advertising operational analytics application the tenants are companies, so we must ensure all tables that are related to a company have a company_id column. These tables are called distributed tables. 
 
-For ex: Campaigns table should have company_id column because campaigns are for companies. Same is with ads, clicks and impressions.
+For example: Campaigns table should have company_id column because campaigns are for companies. Same is with ads, clicks and impressions.
 So in this example company_id will be the “distribution column” (also called sharding key or distribution key). This means we would shard/distribute all the tables across worker nodes using the company_id. This makes all the tables colocated. This means that all the data related to a single company for all tables is on the same worker node. This way we can tell Hyperscale (Citus) to use this column to read and write rows to the same node when the rows are marked for the same company. 
 
 As an example, in the above diagram all the rows on all tables for company_id 5 are on the same worker node.
