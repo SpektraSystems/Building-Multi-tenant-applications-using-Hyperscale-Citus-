@@ -4,26 +4,27 @@ When you create your Hyperscale(Citus) cluster, a default database named citus i
 
 ## **Lab 3: Connect to the database using Psql**
 
-1.Click the **Maximize square** in the upper right of the Cloud Shell click to make it full screen.
+1.Navigate to **Home** in Azure Portal. Then under Azure services click **Azure Database for PostgreSQL servers**. 
 
-2.At the bash prompt, connect to your Azure Database for PostgreSQL server with the Psql utility. Copy and paste the following command in a text editor.
+  ![](Images/postgresql.png)
+
+2.Select the pre-cretead database **postgresxxxx**.
+
+  ![](Images/postgresql1.png)
+
+3.Select **Connection Strings** under **Security** pane. Then copy the connection string given under **psql** and paste it in a text editor.
+
+  ![](Images/connstr1.png)
+
+4.Replace **{your_password}** with **Password123**. The final connection string should look similar to the one shown below. 
 
 ```
-psql "host=srvxxx.postgres.database.azure.com port=5432 dbname=citus user=citus sslmode=require" 
+psql "host=srv135800.postgres.database.azure.com port=5432 dbname=citus user=citus password=Password123 sslmode=require""
 ```
 
-3.Replace **host** with - Go to Azure Database for PostgreSQL server,open your **postgrexxxx** server,then from the top-right corner copy **Coordinator Name** or **PostgreSQL Database hostname** given in **environment details** tab.
+5.Paste the connection string in bash console and press **enter**. You will get connected to **Citus** database server.
 
-4.The final command should look similar to the one shown below. Paste the command in bash console and press **enter**.
-```
-psql "host=srv131057.postgres.database.azure.com port=5432 dbname=citus user=citus sslmode=require"
-```
-
-5.When asked for password, enter **Password.1!!** and press **enter**.
-
-6.Now you will get connected to **Hyperscale(Citus)** database server.
-
-   ![](Images/quey1.png)
+  ![](Images/citusnew.png)
 
 7.Click **Next** on the bottom right of this page.
   
