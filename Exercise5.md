@@ -23,7 +23,7 @@ At this point feel free to follow along in your own Hyperscale (Citus) cluster b
 The create_distributed_table function informs Hyperscale (Citus) that a table should be distributed among nodes and that future incoming queries to those tables should be planned for distributed execution. The function also creates shards for the table on worker nodes, which are low-level units of data storage Hyperscale (Citus) uses to assign data to nodes.
 This specific example will scale the application you created by sharding the tables across the database based on company_id.
 
-1.In the Psql console copy and paste the following to create the distribution key (shard)
+1.In the bash console copy and paste the following to create the distribution key (shard)
 
 ```
 SELECT create_distributed_table('companies', 'id'); 
