@@ -18,7 +18,7 @@ CREATE INDEX ON geo_ips USING gist (addrs inet_ops);
 
   ![](Images/11query.png)
   
-To use this table efficiently in a distributed setup, we need to find a way to co-locate the geo_ips table with clicks for not just one—but every—company. That way, no network traffic need be incurred at query time. We do this in Hyperscale (Citus) by designating geo_ips as a reference table which will store a copy of the table on every worker node.
+To use this table efficiently in a distributed setup, we need to find a way to co-locate the geo_ips table with clicks for not just one—but every—company. That way, no network traffic need be incurred at query time. We do this in Hyperscale(Citus) by designating geo_ips as a reference table which will store a copy of the table on every worker node.
 
 2.In the bash console copy and paste the following to create a geo_ips table
 
@@ -30,7 +30,7 @@ SELECT create_reference_table('geo_ips');
 
   ![](Images/12query.png)
   
-Reference tables are replicated across all worker nodes, and Hyperscale (Citus) automatically keeps them in sync during modifications. Notice that we call create_reference_table rather than create_distributed_table.
+Reference tables are replicated across all worker nodes, and Hyperscale(Citus) automatically keeps them in sync during modifications. Notice that we call create_reference_table rather than create_distributed_table.
 	 
 3.In the bash console copy and paste the following to load geo_ips with data.
 
@@ -42,7 +42,7 @@ Reference tables are replicated across all worker nodes, and Hyperscale (Citus) 
   
 Now joining clicks with this table will execute efficiently on all nodes. Lets ask for the locations of everyone who clicked on ad 290.
 	 
-4.In the bash console copy and paste the following to execute the select statement
+4.In the bash console copy and paste the following to execute the select statement.
 
 ```
 SELECT c.id, clicked_at, latlon
