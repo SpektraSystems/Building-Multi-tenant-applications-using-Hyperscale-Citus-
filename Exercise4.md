@@ -85,7 +85,7 @@ CREATE TABLE impressions (
 
   ![](Images/3query.png)
 
-4.In the bash console copy and paste the following display table commands to see the tables you have just created
+4.In the bash console copy and paste the following display table commands to see the tables you have just created.
 
 ```
 \dt
