@@ -6,7 +6,7 @@ Let’s start by considering a simplified schema for this multi-tenant SaaS appl
 
 ## **Lab 4: Create a Multi-Tenant App for Advertisers**
 
-1.In the bash console copy and paste the following CREATE TABLE commands to create a table for companies (a.k.a. tenant) and their campaigns, then press enter.
+1.In the bash console copy and paste the following **CREATE TABLE** commands to create a table for companies (a.k.a. tenant) and their campaigns, then press enter.
 
 ```
 CREATE TABLE companies (
@@ -32,7 +32,7 @@ CREATE TABLE campaigns (
 
   ![](Images/1query.png)
  
-2.In the bash console copy and paste the following CREATE TABLE command to create a table for the company's ads, then press enter. 
+2.In the bash console copy and paste the following **CREATE TABLE** command to create a table for the company's ads, then press enter. 
 
 ```
 CREATE TABLE ads ( 
@@ -53,7 +53,7 @@ CREATE TABLE ads (
 
   ![](Images/2query.png)
 
-3.In the bash console copy and paste the following CREATE TABLE commands to track statistics about clicks and impressions for each ad, then press enter. 
+3.In the bash console copy and paste the following **CREATE TABLE** commands to track statistics about clicks and impressions for each ad, then press enter. 
 
 ```
 CREATE TABLE clicks ( 
