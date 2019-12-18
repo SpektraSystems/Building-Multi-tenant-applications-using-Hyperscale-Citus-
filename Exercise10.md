@@ -3,7 +3,7 @@
 Each tenant may need to store unique information not needed by others. For example, one of the tenant applications using our advertising database may want to store click tracking information, whereas another tenant may want browser agents. All tenants however share a common infrastructure with an identical database schema.
 Traditionally databases using a shared schema approach for multi-tenancy have resorted to creating a fixed number of pre-allocated “custom” columns, or having external “extension tables.” 
 
-However Hyperscale (Citus) provides a much easier way with its unstructured column types, notably JSONB. JSONB (the B is for binary) provides some of the benefits of NoSQL databases and is also able to be indexed for faster queries.
+However Hyperscale(Citus) provides a much easier way with its unstructured column types, notably JSONB. JSONB (the B is for binary) provides some of the benefits of NoSQL databases and is also able to be indexed for faster queries.
 
 In this example a tenant (say company five), uses the JSONB column to also track whether the user is on a mobile device.
 
@@ -35,7 +35,7 @@ WHERE company_id = 5;
   
 PostgreSQL supports GIN indices on JSONB columns. Creating a GIN index on a JSONB column will create an index on every key and value within that JSON document. This speeds up a number of JSONB operators such as ?, ?|, and ?&.
 
-3.In the bash console copy and paste the following to create a GIN index
+3.In the bash console copy and paste the following to create a GIN index.
 
 ```
 CREATE INDEX click_user_data
