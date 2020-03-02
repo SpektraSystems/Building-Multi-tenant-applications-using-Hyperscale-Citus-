@@ -14,13 +14,15 @@ We pre-provisioned a basic production grade Hyperscale(Citus) cluster with 1 coo
 
   ![](Images/postgresql1.png)
 
-3.On the left side navigation of the overview pane under **Security** click **Networking**. Enter the IP address from your Cloud Shell in the **START IP** and **END IP** boxes and for Firewall Rule Name enter **CloudShell**.
+3.On the overview blade under **Security** click **Networking** and put **Allow Azure Service** to **YES**.
 
-Then click **Save** at the top left of the pane.
+![](Images/2postgresqlfw.png)
 
-  ![](Images/firewall.png)
-   
+4.Now add **Firewall Rule**. Select **Add current client IP address**, this will add the client IP by creating a new rule. Then **save** the changes.
+
+![](Images/firewallip1.png)
+
 > **Note**: Hyperscale(Citus) server communicates over port 5432. If you are trying to connect from within a corporate network, outbound traffic over port 5432 may not be allowed by your network's firewall. If so, you cannot connect to your Hyperscale(Citus) server unless your IT department opens port 5432.
 
-2.Click **Next** on the bottom right of this page.
+5.Click **Next** on the bottom right of this page.
 
