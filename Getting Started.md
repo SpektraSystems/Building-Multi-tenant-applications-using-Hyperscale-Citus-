@@ -6,7 +6,7 @@
 
 2.Use the azure credentials provided in the **Environment Details** tab to log in to the portal.
 
-   ![](Images/environmentdetails.png)
+   ![](https://github.com/Shivashant25/Building-Multi-tenant-applications-using-Hyperscale-Citus-/blob/master/Images/env%20details.png?raw=true)
    
 3.Refer the **Environment Details** tab for any other lab credentials/details.
 
